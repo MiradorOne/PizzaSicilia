@@ -3,7 +3,8 @@ $bootstrap-sass-asset-helper: false !default;
 // Variables
 // --------------------------------------------------
 
-
+$primary-header-text-color:#404959;
+$primary-text-color:#727b89;
 
 //== Colors
 //
@@ -30,7 +31,7 @@ $brand-danger:          #d9534f !default;
 //** Background color for `<body>`.
 $body-bg:               #fff !default;
 //** Global text color on `<body>`.
-$text-color:            $gray-dark !default;
+$text-color:            $primary-text-color !default;
 
 //** Global textual link color.
 $link-color:            $brand-primary !default;
@@ -55,8 +56,8 @@ $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 
 $font-size-h1:            floor(($font-size-base * 2.6)) !default; // ~36px
-$font-size-h2:            floor(($font-size-base * 2.15)) !default; // ~30px
-$font-size-h3:            ceil(($font-size-base * 1.7)) !default; // ~24px
+$font-size-h2:            48px !default; //
+$font-size-h3:            18px !default; //
 $font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-h5:            $font-size-base !default;
 $font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
@@ -67,10 +68,10 @@ $line-height-base:        1.428571429 !default; // 20/14
 $line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
 
 //** By default, this inherits from the `<body>`.
-$headings-font-family:    inherit !default;
-$headings-font-weight:    500 !default;
+$headings-font-family:    "Montserrat-Bold",sans-serif !default;
+$headings-font-weight:    700 !default;
 $headings-line-height:    1.1 !default;
-$headings-color:          inherit !default;
+$headings-color:          $primary-header-text-color !default;
 
 
 //== Iconography
@@ -875,5 +876,4 @@ $dl-horizontal-breakpoint:    $grid-float-breakpoint !default;
 $hr-border:                   $gray-lighter !default;
 
 
-$primary-header-text-color:#404959;
-$primary-text-color:#727b89;
+

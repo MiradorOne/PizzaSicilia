@@ -64,7 +64,7 @@
           <div class="row">
             <div class="col-xs-12 text-center">
               <h2>Check-out</h2>
-              <h3>Proposez votre commande</h3>
+              <p>Proposez votre commande</p>
             </div>
           </div>
         </div>
@@ -72,55 +72,128 @@
     </header>
     <main>
       <div class="container">
-        <div class="row">
-          <div class="col-xs-2">
-            <img src="./images/dish-1.png" alt="Salade Cezas">
+        <div class="row dishes">
+          <div class="col-xs-12 col-md-2 img-dish">
+            <img src="./images/dish-1.png" alt="Salade Cezas" class="center-block">
           </div>
-          <div class="col-xs-6">
-            <h3>Salade Cezar</h3>
+          <div class="col-xs-12 col-md-5">
+            <h3>Salade Cezar <i class="fa fa-pencil"></i></h3>
             <p>Sauce tomate parfumee aux herbes
               Mozzarella - Jambon de Dinde Fume Champignons de Paris - Frais</p>
-            <p><span>+ 6 Extras:</span> Lettuce, Cheese, Egg, Cucumber, Chicken, Onion</p>
           </div>
-          <div class="col-xs-4">
-            <span>48 Dh</span>
-            <input type="number" />
-            <span>96 Dh</span>
-            <p>16D Dh x 2 <span>32 Dh</span></p>
+          <div class="col-xs-12 col-md-5 counter">
+            <div class="row">
+              <div class="col-xs-12 text-right">
+                <span class="dish-price">48 Dh</span>
+                <div class="count">
+                  <span class="substruct">-</span>
+                  <input type="number" min="0" max="10" step="1" value="0" readonly/>
+                  <span class="add">+</span>
+                </div>
+                <i class="fa fa-close"></i>
+                <span class="dish-multiply-price">96 Dh</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div class="row">
+              <div class="col-md-4 col-md-offset-2">
+                <p style=><span class="extras" >+ 6 Extras:</span> Lettuce, Cheese, Egg, Cucumber, Chicken, Onion</p>
+              </div>
+              <div class="col-md-4 col-md-offset-2 text-right">
+                <p class="extras-price">16 Dh x 2 <span class="extras-multiply-price" >32 Dh</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row dishes">
+          <div class="col-xs-12 col-md-2 img-dish">
+            <img src="./images/dish-2.png" alt="Pizza Vegetarienne" class="center-block">
+          </div>
+          <div class="col-xs-12 col-md-5">
+            <h3>Pizza Vegetarienne <i class="fa fa-pencil"></i></h3>
+            <p>Sauce tomate parfumee aux herbes
+              Mozzarella - Jambon de Dinde Fume Champignons de Paris - Frais</p>
+          </div>
+          <div class="col-xs-12 col-md-5 counter ">
+            <div class="row">
+              <div class="col-xs-12 text-right">
+                <span class="old-price"><del>90 Dh</del></span>
+                <span class="dish-price">72 Dh</span>
+                <div class="count">
+                  <span class="substruct">-</span>
+                  <input type="number" min="0" max="10" step="1" value="0" readonly/>
+                  <span class="add">+</span>
+                </div>
+                <i class="fa fa-close"></i>
+                <span class="dish-multiply-price">96 Dh</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div class="row">
+              <div class="col-md-4 col-md-offset-2">
+                <p class="discount">-15% Discount</p>
+              </div>
+              <div class="col-md-4 col-md-offset-2 text-right">
+                <p class="extras-price">16 Dh x 2 <span class="extras-multiply-price" >32 Dh</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row dishes">
+          <div class="col-xs-12 col-md-2 img-dish">
+            <img src="./images/dish-3.png" alt="Шаурма" class="center-block">
+          </div>
+          <div class="col-xs-12 col-md-5">
+            <h3>Шаурма <i class="fa fa-pencil"></i></h3>
+            <p>Sauce tomate parfumee aux herbes
+              Mozzarella - Jambon de Dinde Fume Champignons de Paris - Frais</p>
+          </div>
+          <div class="col-xs-12 col-md-5 counter">
+            <div class="row">
+              <div class="col-xs-12 text-right">
+                <span class="dish-price">48 Dh</span>
+                <div class="count">
+                  <span class="substruct">-</span>
+                  <input type="number" min="0" max="10" value="0" readonly/>
+                  <span class="add">+</span>
+                </div>
+                <i class="fa fa-close"></i>
+                <span class="dish-multiply-price">96 Dh</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div class="row">
+              <div class="col-md-4 col-md-offset-2">
+                <p style=><span class="extras" >+ 6 Extras:</span> Lettuce, Cheese, Egg, Cucumber, Chicken, Onion</p>
+              </div>
+              <div class="col-md-4 col-md-offset-2 text-right">
+                <p class="extras-price">16 Dh x 2 <span class="extras-multiply-price" >32 Dh</span></p>
+              </div>
+            </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-2">
-            <img src="./images/dish-2.png" alt="Pizza Vegetarienne">
+          <div class="col-xs-12 text-center">
+            <a href="#" class="btn btn-border-red  btn-block center-block">Livraison gratuite pour plus de 500Dh</a>
           </div>
-          <div class="col-xs-6">
-            <h3>Pizza Vegetarienne</h3>
-            <p>Sauce Tomate parfumee aux herbes
-              Mozzarella - Aubergines - Brocolis - Coeurs D’Artichauds - Poivrons Marines a l’huile d’olives</p>
-            <p><span>- 15 % Discount</span></p>
-          </div>
-          <div class="col-xs-4">
-            <span>48 Dh</span>
-            <input type="number" />
-            <span>96 Dh</span>
-            <p>16D Dh x 2 <span>32 Dh</span></p>
+        </div>
+        <div class="row row-padding">
+          <div class="col-xs-12 text-right">
+            <p>Sas Sous-total: <span>624 Dh</span></p>
+            <p class="discount">Expédition: <span>0 Dh</span></p>
+            <p>Total: <span>624 Dh</span></p>
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-2">
-            <img src="./images/dish-3.png" alt="Шаурма">
+          <div class="col-xs-3">
+            <a href="#" class="btn btn-white">continuer les achats</a>
           </div>
-          <div class="col-xs-6">
-            <h3>Шаурма</h3>
-            <p>Sauce Tomate parfumee aux herbes
-              Mozzarella - Aubergines - Brocolis - Coeurs D’Artichauds - Poivrons Marines a l’huile d’olives</p>
-            <p><span>+ 6 Extras:</span> Lettuce, Cheese, Egg, Cucumber, Chicken, Onion</p>
-          </div>
-          <div class="col-xs-4">
-            <span>48 Dh</span>
-            <input type="number" />
-            <span>96 Dh</span>
-            <p>16D Dh x 2 <span>32 Dh</span></p>
+          <div class="col-xs-6 col-xs-offset-3 text-right inline-block">
+            <p>Besoin d'aide? Appelez <a href="tel:3428 0034 12">+3428 0034 12</a></p>
+            <a href="#" class="btn btn-green">Passer à la caisse</a>
           </div>
         </div>
       </div>

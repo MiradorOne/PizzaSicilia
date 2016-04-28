@@ -26,8 +26,105 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+    <header>
+      <nav class="navbar navbar-default " role="navigation">
+        <div class="container-fluid">
 
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="tel:0522000000" class="contact fa fa-phone fa-2x pull-right"></a>
+          </div>
 
+          <div class="navbar-offcanvas navbar-offcanvas-touch navbar-offcanvas-right" id="js-bootstrap-offcanvas">
+            <ul class="nav navbar-nav margin-left">
+              <li><a href="#">Accueil <span class="sr-only">(current)</span></a></li>
+              <li><a href="#">Qui Sommes Nous</a></li>
+              <li><a href="#" class="hot-proposition">Menus</a></li>
+              <li><a href="#">Pizzas Gourmet</a></li>
+              <li><a href="#">Suivez votre commande</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right center-block">
+              <li><i class="fa fa-phone fa-2x"></i><a href="tel:0522000000" class="contact">0522 000 000</a></li>
+              <li><button href="#" class="btn btn-green btn-block"><i class="fa fa-shopping-cart"></i>3 products</button></li>
+            </ul>
+          </div><!-- /.navbar-offcanvas -->
+          <div class="logo">
+            <img src="images/logo.png" alt="Scilia">
+          </div>
+        </div><!-- /.container-fluid -->
+      </nav>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 text-center">
+              <h2>Check-out</h2>
+              <h3>Proposez votre commande</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-2">
+            <img src="./images/dish-1.png" alt="Salade Cezas">
+          </div>
+          <div class="col-xs-6">
+            <h3>Salade Cezar</h3>
+            <p>Sauce tomate parfumee aux herbes
+              Mozzarella - Jambon de Dinde Fume Champignons de Paris - Frais</p>
+            <p><span>+ 6 Extras:</span> Lettuce, Cheese, Egg, Cucumber, Chicken, Onion</p>
+          </div>
+          <div class="col-xs-4">
+            <span>48 Dh</span>
+            <input type="number" />
+            <span>96 Dh</span>
+            <p>16D Dh x 2 <span>32 Dh</span></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2">
+            <img src="./images/dish-2.png" alt="Pizza Vegetarienne">
+          </div>
+          <div class="col-xs-6">
+            <h3>Pizza Vegetarienne</h3>
+            <p>Sauce Tomate parfumee aux herbes
+              Mozzarella - Aubergines - Brocolis - Coeurs D’Artichauds - Poivrons Marines a l’huile d’olives</p>
+            <p><span>- 15 % Discount</span></p>
+          </div>
+          <div class="col-xs-4">
+            <span>48 Dh</span>
+            <input type="number" />
+            <span>96 Dh</span>
+            <p>16D Dh x 2 <span>32 Dh</span></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2">
+            <img src="./images/dish-3.png" alt="Шаурма">
+          </div>
+          <div class="col-xs-6">
+            <h3>Шаурма</h3>
+            <p>Sauce Tomate parfumee aux herbes
+              Mozzarella - Aubergines - Brocolis - Coeurs D’Artichauds - Poivrons Marines a l’huile d’olives</p>
+            <p><span>+ 6 Extras:</span> Lettuce, Cheese, Egg, Cucumber, Chicken, Onion</p>
+          </div>
+          <div class="col-xs-4">
+            <span>48 Dh</span>
+            <input type="number" />
+            <span>96 Dh</span>
+            <p>16D Dh x 2 <span>32 Dh</span></p>
+          </div>
+        </div>
+      </div>
+    </main>
 
 
 
@@ -44,6 +141,7 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/bootstrap-offcanvas/dist/js/bootstrap.offcanvas.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -60,6 +158,7 @@
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <script src="/bower_components/bootstrap-offcanvas/dist/js/bootstrap.offcanvas.min.js"></script>
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->

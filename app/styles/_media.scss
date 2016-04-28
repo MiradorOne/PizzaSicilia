@@ -1,0 +1,41 @@
+@media screen and (max-width:1231px) {
+header {
+  .navbar-header {
+    a.fa.fa-phone  {
+      display:block;
+      color:#de3d30;
+      line-height:50px;
+      margin-right:15px;
+    }
+  }
+
+.container-fluid {
+  .navbar-offcanvas {
+    &>.margin-left {
+      margin-left:0;
+    }
+  }
+}
+
+  .container-fluid {
+  .logo {
+      &>img {
+        left: 50%;
+        transform: translateX(-50%);
+        top:20px;
+      }
+      &:before{
+        content: '';
+        width: 250px;
+        height: 124px;
+        left: 50%;
+        transform: translateX(-50%);
+        //box-shadow: inset #E4E4E4 0px 1px 11px;
+      }
+    }
+   }
+ }
+}
+
+
+

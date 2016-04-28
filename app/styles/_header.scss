@@ -1,0 +1,70 @@
+header {
+  .navbar {
+
+    border-radius: 0;
+    min-height: 80px;
+    box-shadow: #E4E4E4 0px 1px 11px;
+    .container-fluid {
+      &:before, &:after {
+        display: inline-block;
+      }
+    }
+  }
+  .navbar-offcanvas {
+    .margin-left {
+      margin-left:30% ;
+    }
+    .navbar-nav {
+      font-family:'Montserrat-Regular',sans-serif;
+      text-transform: uppercase;
+      &>li {
+        &>a {
+          color:$primary-header-text-color;
+        }
+        .contact {
+          display: inline-block;
+          font-weight:600;
+          font-size:24px;
+        }
+        i,i + .contact {
+          color:#de3d30;
+        }
+        .fa-shopping-cart {
+          color:#fff;
+          padding-right: 10px;
+        }
+      }
+    }
+    .navbar-right {
+      .btn-green {
+        color:#fff;
+      }
+    }
+  }
+  .navbar-header {
+    a.fa {
+      display: none;
+    }
+  }
+  .logo {
+    img {
+      position: absolute;
+      left:165px;
+      top:20px;
+      z-index: 100;
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      width: 250px;
+      height: 124px;
+      left: 156px;
+      top: 21px;
+      background: url("../images/bg-texture.jpg");
+      border-radius: 239px 239px 0 0;
+      //box-shadow: inset #E4E4E4 0px 1px 11px;
+    }
+  }
+}
+
+

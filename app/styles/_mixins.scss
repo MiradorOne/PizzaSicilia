@@ -1,0 +1,25 @@
+@mixin link-variant($color, $hover-color: null){
+
+  @if $hover-color != null{
+    color: $color;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      color: $hover-color;
+      text-decoration: none;
+    }
+
+  } @else {
+    color: $color;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      color: darken($color, 10%);
+      text-decoration: none;
+    }
+  }
+
+  &:focus {
+    @include tab-focus;
+  }
+}

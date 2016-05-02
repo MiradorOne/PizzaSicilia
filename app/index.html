@@ -37,7 +37,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a href="tel:0522000000" class="contact fa fa-phone fa-2x pull-right"></a>
+            <a href="tel:0522000000" class="contact  fa fa-phone fa-2x pull-right"></a>
           </div>
 
           <div class="navbar-offcanvas navbar-offcanvas-touch navbar-offcanvas-right" id="js-bootstrap-offcanvas">
@@ -50,7 +50,7 @@
               <li><a href="#">Support</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right center-block">
-              <li><i class="fa fa-phone fa-2x"></i><a href="tel:0522000000" class="contact">0522 000 000</a></li>
+              <li><i class="fa fa-phone fa-2x"></i><a href="tel:0522000000" class="contact contact-number">0522 000 000</a></li>
               <li><button href="#" class="btn btn-green btn-block"><i class="fa fa-shopping-cart"></i>3 products</button></li>
             </ul>
           </div><!-- /.navbar-offcanvas -->
@@ -72,7 +72,7 @@
     </header>
     <main>
       <div class="container">
-        <div class="row dishes">
+        <div class="row dishes" data-id="2">
           <div class="col-xs-12 col-md-2 img-dish">
             <img src="./images/dish-1.png" alt="Salade Cezas" class="center-block">
           </div>
@@ -84,14 +84,14 @@
           <div class="col-xs-12 col-md-5 counter">
             <div class="row">
               <div class="col-xs-12 text-right">
-                <span class="dish-price">48 Dh</span>
+                <span class="dish-price">48 <span>Dh</span></span>
                 <div class="count">
                   <span class="substruct">-</span>
                   <input type="number" min="0" max="10" step="1" value="0" readonly/>
-                  <span class="add">+</span>
+                  <span class="add" data-add="0">+</span>
                 </div>
                 <i class="fa fa-close"></i>
-                <span class="dish-multiply-price">96 Dh</span>
+                <span class="dish-multiply-price">0 <span>Dh</span></span>
               </div>
             </div>
           </div>
@@ -101,12 +101,12 @@
                 <p style=><span class="extras" >+ 6 Extras:</span> Lettuce, Cheese, Egg, Cucumber, Chicken, Onion</p>
               </div>
               <div class="col-md-4 col-md-offset-2 text-right">
-                <p class="extras-price">16 Dh x 2 <span class="extras-multiply-price" >32 Dh</span></p>
+                <p class="extras-price">16 Dh x 2 <span class="extras-multiply-price" >32 <span>Dh</span></span></p>
               </div>
             </div>
           </div>
         </div>
-        <div class="row dishes">
+        <div class="row dishes" data-id="1">
           <div class="col-xs-12 col-md-2 img-dish">
             <img src="./images/dish-2.png" alt="Pizza Vegetarienne" class="center-block">
           </div>
@@ -118,15 +118,15 @@
           <div class="col-xs-12 col-md-5 counter ">
             <div class="row">
               <div class="col-xs-12 text-right">
-                <span class="old-price"><del>90 Dh</del></span>
-                <span class="dish-price">72 Dh</span>
+                <span class="dish-price old-price"><del>90 Dh</del></span>
+                <span class="new-price">72 Dh</span>
                 <div class="count">
                   <span class="substruct">-</span>
                   <input type="number" min="0" max="10" step="1" value="0" readonly/>
                   <span class="add">+</span>
                 </div>
                 <i class="fa fa-close"></i>
-                <span class="dish-multiply-price">96 Dh</span>
+                <span class="dish-multiply-price">0 Dh</span>
               </div>
             </div>
           </div>
@@ -141,7 +141,7 @@
             </div>
           </div>
         </div>
-        <div class="row dishes">
+        <div class="row dishes" data-id="0">
           <div class="col-xs-12 col-md-2 img-dish">
             <img src="./images/dish-3.png" alt="Шаурма" class="center-block">
           </div>
@@ -160,7 +160,7 @@
                   <span class="add">+</span>
                 </div>
                 <i class="fa fa-close"></i>
-                <span class="dish-multiply-price">96 Dh</span>
+                <span class="dish-multiply-price">0 Dh</span>
               </div>
             </div>
           </div>
@@ -177,22 +177,23 @@
         </div>
         <div class="row">
           <div class="col-xs-12 text-center">
-            <a href="#" class="btn btn-border-red  btn-block center-block">Livraison gratuite pour plus de 500Dh</a>
+            <button class="btn btn-border-red btn-block center-block promo-code"><input type="text" placeholder="Enter your promo code here" name="promo-code"><span>Livraison gratuite pour plus de 500Dh</span></button>
+            <input type="submit" name="send-promo-code">
           </div>
         </div>
         <div class="row row-padding">
           <div class="col-xs-12 text-right">
-            <p>Sas Sous-total: <span>624 Dh</span></p>
-            <p class="discount">Expédition: <span>0 Dh</span></p>
-            <p>Total: <span>624 Dh</span></p>
+            <p>Sas Sous-total: <span class="total-price">0 <span>Dh</span></span></p>
+            <p class="discount">Expédition: <span class="discount-price">0 <span>Dh</span></span></p>
+            <p>Total: <span class="total-price-with-discount">0 <span>Dh</span></span></p>
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-3">
+          <div class="col-xs-12 col-sm-3 col-md-4 ">
             <a href="#" class="btn btn-white">continuer les achats</a>
           </div>
-          <div class="col-xs-6 col-xs-offset-3 text-right inline-block">
-            <p>Besoin d'aide? Appelez <a href="tel:3428 0034 12">+3428 0034 12</a></p>
+          <div class="col-xs-12 col-sm-6 col-md-7 col-md-offset-1 text-right inline-block">
+            <p>Besoin d'aide? Appelez <a href="tel:3428 0034 12" class="contact-number">+3428 0034 12</a></p>
             <a href="#" class="btn btn-green">Passer à la caisse</a>
           </div>
         </div>
@@ -201,15 +202,15 @@
 
 
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
+    <!--&lt;!&ndash; Google Analytics: change UA-XXXXX-X to be your site's ID. &ndash;&gt;-->
+    <!--<script>-->
+      <!--(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=-->
+      <!--function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;-->
+      <!--e=o.createElement(i);r=o.getElementsByTagName(i)[0];-->
+      <!--e.src='https://www.google-analytics.com/analytics.js';-->
+      <!--r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));-->
+      <!--ga('create','UA-XXXXX-X');ga('send','pageview');-->
+    <!--</script>-->
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->

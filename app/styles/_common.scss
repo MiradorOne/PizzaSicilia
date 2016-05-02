@@ -18,8 +18,13 @@
   }
 }
 
+
 .row-padding {
   padding: 20px 0;
+}
+
+.contact-number {
+  color: #de3d30;
 }
 
 .btn {
@@ -73,5 +78,12 @@
   font-size:14px;
 }
 
+.promo-code {
+ input {
+   width:60%;
+   display: none;
+   color:$primary-header-text-color;
+ }
+}
 
 

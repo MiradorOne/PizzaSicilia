@@ -1,89 +1,91 @@
-.navbar + section {
-  padding: 50px 0 ;
+.navbar+ section {
+	padding: 50px 0;
 }
+
 main {
-  h3 > i {
-    padding-left: 10px;
-  }
-
-  .container {
-  }
-  .dishes {
-    margin: 10px 0 20px;
-  }
-
-  .img-dish {
-    line-height: 170px;
-  }
-  .counter {
-    font-size:$font-size-h4;
-    text-align: left;
-    margin: 0 0 10px 0;
-    .count {
-      display: inline-block;
-      position: relative;
-    }
-    p {
-      //margin-top: 62px;
-    }
-    .dish-price {
-      padding-right: 15px;
-    }
-    .fa-close {
-      color:#de3d30;
-      padding-left: 15px;
-    }
-  }
-  .dish-multiply-price,.extras-multiply-price {
-    padding-left: 50px;
-  }
-
-  .substruct,.add {
-    background: #fff;
-    width:40px;
-    height:40px;
-    display: inline-block;
-    text-align: center;
-    line-height: 40px;
-    font-size:24px;
-    border-radius: 4px;
-    box-shadow: 2px 3px 6px 0px rgba(0, 0, 1, 0.06);
-  }
-
-  input {
-    position: relative;
-    outline: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: none;
-    border-radius: 4px;
-    background-color:  #ffffff;
-    box-shadow: 2px 3px 6px 0px rgba(0, 0, 1, 0.06);
-    text-align: center;
-    font-size:18px;
-    color:$primary-header-text-color;
-    width:51px;
-    height:51px;
-  }
-
-  input[type=number]::-webkit-outer-spin-button,
-  input[type=number]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin:0;
-  }
-  .inline-block {
-    p {
-      display: inline-block;
-      color:$primary-header-text-color;
-      font-family:"Montserrat-Bold",sans-serif;
-      font-weight:700;
-    }
-  }
-  input[name=send-promo-code] {
-    width: 150px;
-    visibility: hidden;
-    margin-top: 10px;
-  }
+	h3> i {
+		padding-left: 10px;
+	}
+	.dishes {
+		margin: 10px 0 20px;
+	}
+	.img-dish {
+		line-height: 170px;
+	}
+	.counter {
+		font-size: $font-size-h4;
+		text-align: left;
+		margin: 0 0 10px 0;
+		.count {
+			display: inline-block;
+			position: relative;
+		}
+		.dish-price {
+			padding-right: 15px;
+		}
+		.fa-close {
+			color: #de3d30;
+			padding-left: 15px;
+		}
+	}
+	.dish-multiply-price,
+	.extras-multiply-price {
+		padding-left: 50px;
+	}
+	.substruct,
+	.add {
+		cursor:pointer;
+		background: #fff;
+		width: 40px;
+		height: 40px;
+		display: inline-block;
+		text-align: center;
+		line-height: 40px;
+		font-size: 24px;
+		border-radius: 4px;
+		box-shadow: 2px 3px 6px 0px rgba(0, 0, 1, 0.06);
+	}
+	input {
+		position: relative;
+		outline: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		border: none;
+		border-radius: 4px;
+		background-color: #ffffff;
+		box-shadow: 2px 3px 6px 0px rgba(0, 0, 1, 0.06);
+		text-align: center;
+		font-size: 18px;
+		color: $primary-header-text-color;
+		width: 51px;
+		height: 51px;
+	}
+	input[type=number]::-webkit-outer-spin-button,
+	input[type=number]::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+	.inline-block {
+		@media screen and (max-width:$screen-xs) {
+				text-align: center;
+				padding-top:15px;
+			}
+		p {
+			display: inline-block;
+			color: $primary-header-text-color;
+			font-family: "Montserrat-Bold", sans-serif;
+			font-weight: 700;
+		}
+	}
+	input[name=send-promo-code] {
+		width: 150px;
+		visibility: hidden;
+		margin-top: 10px;
+	}
+	.section-white {
+		p {
+			padding: 20px 0 30px 0;
+		}
+	}
 }
-

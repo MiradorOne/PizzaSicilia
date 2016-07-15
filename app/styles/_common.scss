@@ -1,23 +1,22 @@
 .hot-proposition {
-  font-family:'Montserrat Extra Bold',sans-serif;
+  font-family: 'Montserrat Extra Bold', sans-serif;
   position: relative;
-  font-weight:800;
+  font-weight: 800;
   &:before {
     text-align: center;
-    color:#fff;
+    color: #fff;
     content: "hot";
-    font-size:10px;
-    font-weight:700;
-    position:absolute;
-    width:37px;
-    height:17px;
-    top:0;
-    right:0;
+    font-size: 10px;
+    font-weight: 700;
+    position: absolute;
+    width: 37px;
+    height: 17px;
+    top: 0;
+    right: 0;
     background-color: #de3d30;
-    border-radius:8px 8px 8px 0;
+    border-radius: 8px 8px 8px 0;
   }
 }
-
 
 .row-padding {
   padding: 20px 0;
@@ -27,63 +26,111 @@
   color: #de3d30;
 }
 
+.container-padding {
+  padding-top:100px;
+  padding-bottom: 100px;
+}
+
+.container-padding-bottom {
+  padding-bottom: 100px;
+}
+
 .btn {
-  font-family:'Montserrat-Bold',sans-serif;
-  font-weight:700;
-  min-height:50px;
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-weight: 700;
+  min-height: 50px;
   text-transform: uppercase;
   line-height: 36px;
 }
 
 .btn-green {
-  @include button-variant(#fff,#8dc63f,#8dc63f);
+  @include button-variant(#fff, #8dc63f, #8dc63f);
 }
 
 .btn-border-red {
   border-style: dashed;
   line-height: 38px;
-  white-space:normal;
+  white-space: normal;
   border-width: 2px;
-  max-width:570px;
-  @include  button-variant($primary-header-text-color,rgba(0,0,0,0),#de3d30);
+  max-width: 570px;
+  @include button-variant($primary-header-text-color, rgba(0, 0, 0, 0), #de3d30);
+}
+
+.btn-red {
+  @include button-variant(white, #de3d30, #de3d30);
 }
 
 .btn-white {
-  @include button-variant($primary-header-text-color,#fff,#fff);
+  @include button-variant($primary-header-text-color, #fff, #fff);
 }
+
 
 .visibility-hidden {
   visibility: hidden;
 }
 
-.discount,.old-price {
-  color:#de3d30;
+.discount,
+.old-price {
+  color: #de3d30;
 }
 
 .extras {
-  color:#8dc63f;
+  color: #8dc63f;
 }
 
-.discount, .extras,.dish-multiply-price,.extras-multiply-price {
-  font-family:"Montserrat-Bold",sans-serif;
-  font-weight:700;
+.discount,
+.extras,
+.dish-multiply-price,
+.extras-multiply-price {
+  font-family: "Montserrat-Bold", sans-serif;
+  font-weight: 700;
 }
 
-.dish-multiply-price,.extras-multiply-price {
-  color:$primary-header-text-color;
+.dish-multiply-price,
+.extras-multiply-price {
+  color: $primary-header-text-color;
 }
 
 .extras-price {
-  font-family:'Open Sans',sans-serif;
-  font-size:14px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
 }
 
 .promo-code {
- input {
-   width:60%;
-   display: none;
-   color:$primary-header-text-color;
- }
+  input {
+    width: 60%;
+    display: none;
+    color: $primary-header-text-color;
+  }
 }
 
+.section-white {
+  background: white;
+}
 
+.social {
+	border: 2px solid;
+	padding: 4px 13px;
+	border-radius: 5px;
+	display: inline-block;
+	font-size: 13px;
+
+	&:not(:last-of-type) {
+		margin-right: 5px;
+	}
+
+	&.social-facebook {
+		color:#004a80;
+		border-color: #004a80; 
+	}
+
+	&.social-google {
+		color:#de3d30;
+		border-color:#de3d30;
+	}
+
+	&.social-twitter {
+		color:#00aeef;
+		border-color:#00aeef;
+	}
+}

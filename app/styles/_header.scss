@@ -1,70 +1,139 @@
 header {
-  .navbar {
-
-    border-radius: 0;
-    min-height: 80px;
-    box-shadow: #E4E4E4 0px 1px 11px;
-    .container-fluid {
-      &:before, &:after {
-        display: inline-block;
-      }
-    }
-  }
-  .navbar-offcanvas {
-    .margin-left {
-      margin-left:30% ;
-    }
-    .navbar-nav {
-      font-family:'Montserrat-Regular',sans-serif;
-      text-transform: uppercase;
-      &>li {
-        &>a {
-          color:$primary-header-text-color;
-        }
-        .contact {
-          display: inline-block;
-          font-weight:600;
-          font-size:24px;
-        }
-        i,i + .contact {
-          color:#de3d30;
-        }
-        .fa-shopping-cart {
-          color:#fff;
-          padding-right: 10px;
-        }
-      }
-    }
-    .navbar-right {
-      .btn-green {
-        color:#fff;
-      }
-    }
-  }
-  .navbar-header {
-    a.fa {
-      display: none;
-    }
-  }
-  .logo {
-    img {
-      position: absolute;
-      left:165px;
-      top:20px;
-      z-index: 100;
-    }
-    &:before{
-      content: '';
-      position: absolute;
-      width: 250px;
-      height: 124px;
-      left: 156px;
-      top: 21px;
-      background: url("../images/bg-texture.jpg");
-      border-radius: 239px 239px 0 0;
-      //box-shadow: inset #E4E4E4 0px 1px 11px;
-    }
-  }
+	.navbar {
+		position: relative;
+		border-radius: 0;
+		min-height: 80px;
+		box-shadow: #E4E4E4 0px 1px 11px;
+		.container-fluid {
+			&:before,
+			&:after {
+				display: inline-block;
+			}
+		}
+	}
+	.navbar-offcanvas {
+		.margin-left {
+			margin-left: 30%;
+		}
+		.navbar-nav {
+			font-family: 'Montserrat-Regular', sans-serif;
+			text-transform: uppercase;
+			&>li {
+				&>a {
+					color: $primary-header-text-color;
+				}
+				.contact {
+					display: inline-block;
+					font-weight: 600;
+					font-size: 24px;
+				}
+				i,
+				i+ .contact {
+					color: #de3d30;
+				}
+				.fa-shopping-cart {
+					color: #fff;
+					padding-right: 10px;
+				}
+			}
+		}
+		.navbar-right {
+			.btn-green {
+				color: #fff;
+			}
+		}
+	}
+	.navbar-header {
+		a.fa {
+			display: none;
+		}
+	}
+	.logo {
+		img {
+			position: absolute;
+			left: 165px;
+			top: 20px;
+			z-index: 100;
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			width: 250px;
+			height: 124px;
+			left: 156px;
+			top: 21px;
+			background: url("../images/bg-texture.jpg");
+			border-radius: 239px 239px 0 0;
+		}
+	}
+	.light {
+		position: absolute;
+		top: 0;
+		@media screen and (max-width: 424px) {
+			display: none;
+		}
+		@media screen and (min-width:767px) {
+			top: 92px;
+		}
+		@media screen and (min-width: 1231px) {
+			top: 122px;
+		}
+		@media screen and (min-width: 1798px) {
+			top: 80px;
+		}
+		&.light-short-fat {
+			background: url("../images/light-short-fat.png") no-repeat;
+			width: 96px;
+			height: 183px;
+			bottom: 0;
+			@media screen and (min-width: 424px) and (max-width: 767px) {
+				right: 0;
+				top: 92px;
+			}
+			@media screen and (min-width:767px) {
+				left: 150px;
+			}
+			@media screen and (min-width:1798px) {
+				left: 90px;
+			}
+			@media screen and (min-width: 1231px) and (max-width:1798px) {
+				left: 90px;
+			}
+		}
+		&.light-long-thin {
+			background: url("../images/light-long-thin.png") no-repeat;
+			width: 72px;
+			height: 280px;
+			@media screen and (min-width: 424px) and (max-width: 767px) {
+				left: 7px;
+				top: 92px;
+			}
+			@media screen and (min-width:767px) {
+				left: 30px;
+			}
+			@media screen and (min-width: 1231px) and (max-width:1798px) {
+				left: 10px;
+			}
+		}
+		&.light-short-thin {
+			background: url("../images/light-short-thin.png") no-repeat;
+			width: 72px;
+			height: 130px;
+			display: none;
+			@media screen and (min-width: 767px) {
+				right: 150px;
+				display: block;
+			}
+		}
+		&.light-long-fat {
+			background: url("../images/light-long-fat.png") no-repeat;
+			width: 92px;
+			height: 281px;
+			display: none;
+			@media screen and (min-width: 767px) {
+				right: 30px;
+				display: block;
+			}
+		}
+	}
 }
-
-

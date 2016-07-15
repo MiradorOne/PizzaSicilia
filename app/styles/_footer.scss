@@ -1,0 +1,22 @@
+footer {
+	padding: 80px 0 150px 0;
+	background: url("../images/footer-decor.png") #20252d no-repeat center bottom;
+	.row-social {
+		margin-bottom: 38px;
+	}
+	ul {
+		li {
+			@media screen and (max-width: $screen-md) {
+					line-height: 30px;
+				}
+			a {
+				color: white;
+			}
+		}
+	}
+	.list-inline {
+		@media screen and (max-width: $screen-lg) {
+			text-align: center;
+		}
+	}
+}

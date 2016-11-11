@@ -1,3 +1,3 @@
 # PizzaSicilia
 
-Demo: http://mirador.16mb.com/PizzaSicilia/
+Demo: https://kitdemonio.github.io/ambitionary/

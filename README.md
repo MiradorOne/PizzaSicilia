@@ -1,3 +1,3 @@
 # PizzaSicilia
 
-Demo: https://kitdemonio.github.io/ambitionary/
+Demo: https://kitdemonio.github.io/pizza-sicilia/
